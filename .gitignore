@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,django,visualstudiocode,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,django,visualstudiocode,macos
+# Created by https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,python,django
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudiocode,python,django
 
 ### Django ###
 *.log
@@ -314,5 +314,5 @@ pyrightconfig.json
 # Ignore all local history of files
 .history
 .ionide
-
-# End of https://www.toptal.com/developers/gitignore/api/python,django,visualstudiocode,macos
+.DS_Store
+# End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,python,django
