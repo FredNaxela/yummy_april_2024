@@ -5,12 +5,6 @@ from .models import DishCategory, Dish, Events, Staff, Gallery, ContactInfo
 
 # Create your views here.
 def index(request):
-    contact_info = ContactInfo.objects.create(
-        address='A108 Adam Street, New York, NY 535022',
-        email='contact@example.com',
-        phone='+1 5589 55488 55',
-        opening_hours='Mon-Sat: 11AM - 23PM; Sunday: Closed'
-    )
 
     categories = DishCategory.objects.filter(is_visible=True)
     gallery = Gallery.objects.filter(is_visible=True)

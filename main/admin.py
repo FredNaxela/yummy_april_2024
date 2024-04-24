@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import DishCategory, Dish, Events, Staff, Gallery
+from .models import DishCategory, Dish, Events, Staff, Gallery, ContactInfo
 from django.utils.safestring import mark_safe
 
 # Register your models here.
@@ -54,3 +54,8 @@ class StaffAdmin(admin.ModelAdmin):
             return mark_safe(f"<img src='{obj.photo.url}' width=50 height=50>")
 
     photo_src_tag.short_description = 'Staff photo'
+
+
+@admin.register(ContactInfo)
+class ContactInfoAdmin(admin.ModelAdmin):
+    list_display = ('address', 'email', 'phone', 'opening_hours')

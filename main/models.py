@@ -92,5 +92,7 @@ class ContactInfo(models.Model):
     email = models.EmailField()
     phone = models.CharField(max_length=15)
     opening_hours = models.TextField()
-    def __str__(self):
-        return self.address
+
+    class Meta:
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакти'
