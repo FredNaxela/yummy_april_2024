@@ -37,7 +37,7 @@
 <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
-            <a href="{%  url 'index' %}" class="logo d-flex align-items-center me-auto me-lg-0">
+            <a href="{%  url 'main:index' %}" class="logo d-flex align-items-center me-auto me-lg-0">
                 <h1>{{ app_title|safe }}</h1>
             </a>
             {% include 'includes/nav.html' %}
@@ -46,6 +46,9 @@
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
+        </div>
+        <div>
+            {% include 'includes/messages.html' %}
         </div>
     </header><!-- End Header -->
 

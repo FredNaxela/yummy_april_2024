@@ -1,10 +1,11 @@
 from django.contrib import admin
-from .models import DishCategory, Dish, Events, Staff, Gallery, ContactInfo
+from .models import DishCategory, Dish, Events, Staff, Gallery, ContactInfo, Reservation
 from django.utils.safestring import mark_safe
 
 # Register your models here.
 
 admin.site.register(Gallery)
+admin.site.register(Reservation)
 
 @admin.register(DishCategory)
 class DishCategoryAdmin(admin.ModelAdmin):
